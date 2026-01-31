@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
+    <title>Simplotel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,10 +13,12 @@
         <h1>Home</h1>
         <h1>Order</h1>
         <h1>Food</h1>
-        <h1>Restaurent</h1>
-        <h1>Testtimonials</h1>
-        <h1>Contact Us</h1>
-        <img src="/assests/burger.svg" width="50px" alt="Burger Menu">
+        <div class="nav-links" id="navLinks">
+            <h1>Restaurant</h1>
+            <h1>Testimonials</h1>
+            <h1>Contact Us</h1>
+        </div>
+        <img id="burgerIcon" src="/assests/burger.svg" width="50px" alt="Burger Menu">
     </nav>
     <main>
         <div class="lorem">
@@ -31,7 +33,7 @@
 
             <button>Click Me</button>
         </div>
-        <div><img src="/assests/image.png" alt="Burger"></div>
+        <div class="image"><img src="/assests/image.png" alt="Burger"></div>
     </main>
     <section>
         <div class="cards">
@@ -47,5 +49,14 @@
 
     </section>
 </body>
+
+<script>
+    const burgerIcon = document.getElementById('burgerIcon');
+    const navLinks = document.getElementById('navLinks');
+
+    burgerIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 
 </html>
