@@ -97,7 +97,7 @@ section {
 .div1 {
     height: 100%;
     width: 18rem;
-    background-image: url("img1.png");
+    background-image: url("/assests/img1.png");
     background-size: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ section {
     grid-row-start: 2;
     height: 100%;
     width: 18rem;
-    background-image: url("img2.png");
+    background-image: url("/assests/img2.png");
     background-size: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@ section {
     grid-row-start: 1;
     height: 100%;
     width: 20rem;
-    background-image: url("img3.png");
+    background-image: url("/assests/img3.png");
     background-size: 100%; 
     background-position: center;
     background-repeat: no-repeat;
