@@ -33,9 +33,11 @@ main {
     justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
 }
-.image {
-    max-width: 100%;
+#image img {
+    width: 50vw;
     height: 100vh;
+    object-fit: cover;
+    object-position: center;
 }
 .lorem h1 {
     font-size: clamp(1.8rem, 4vw, 4rem);
@@ -113,7 +115,7 @@ section {
 .div1 {
     height: 100%;
     width: 18rem;
-    background-image: url("/assests/img1.png");
+    background-image: url("/assests/pexels-rachel-claire-6752433.jpg");
     transition: background-size 0.3s ease-in-out;
 }
 
@@ -126,7 +128,7 @@ section {
     grid-row-start: 2;
     height: 100%;
     width: 18rem;
-    background-image: url("/assests/img2.png");
+    background-image: url("/assests/pexels-eva-bronzini-6141651.jpg");
     transition: background-size 0.3s ease-in-out;
 }
 .div2:hover {
@@ -139,7 +141,7 @@ section {
     grid-row-start: 1;
     height: 100%;
     width: 20rem;
-    background-image: url("/assests/img3.png");
+    background-image: url("/assests/pexels-mister-mister-3434523.jpg");
     transition: background-size 0.3s ease-in-out;
 }
 
@@ -225,6 +227,13 @@ section {
         justify-content: center;
         align-items: center;
         height: auto;
+    }
+
+    #image img {
+        width: 100vw;
+        height: 50vh;
+        object-fit: cover;
+        object-position: center;
     }
 
     .lorem {
